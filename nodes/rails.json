@@ -1,0 +1,28 @@
+{
+  "mysql": {
+    "version": "5.5",
+    "port": "3306",
+    "server_root_password": "",
+    "remove_anonymous_users": true,
+    "remove_test_database": true
+  },
+  "nginx": {
+    "post": 80
+  },
+  "rbenv": {
+    "user_installs": [{
+      "user": "vagrant",
+      "rubies": ["2.1.4"],
+      "global": "2.1.4"
+    }]
+  },
+  "run_list": [
+    "recipe[mysql::server]",
+    "recipe[ruby_build]",
+    "recipe[rbenv::user]",
+    "nginx"
+  ],
+  "automatic": {
+    "ipaddress": "rails"
+  }
+}

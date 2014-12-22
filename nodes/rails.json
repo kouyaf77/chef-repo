@@ -20,6 +20,8 @@
     "recipe[mysql::server]",
     "recipe[ruby_build]",
     "recipe[rbenv::user]",
+    "recipe[redisio]",
+    "recipe[redisio::enable]",
     "recipe[nodejs]",
     "nginx"
   ],

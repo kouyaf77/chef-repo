@@ -4,6 +4,7 @@ DEPENDENCIES
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
     revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  redisio
   ruby_build
 
 GRAPH
@@ -26,7 +27,11 @@ GRAPH
   rbenv (0.7.3)
     java (> 1.4.0)
     ruby_build (>= 0.0.0)
+  redisio (2.2.4)
+    build-essential (>= 0.0.0)
+    ulimit (>= 0.1.2)
   ruby_build (0.8.0)
+  ulimit (0.3.2)
   windows (1.34.8)
     chef_handler (>= 0.0.0)
   yum (3.4.1)

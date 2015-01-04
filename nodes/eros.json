@@ -22,6 +22,8 @@
     "recipe[rbenv::user]",
     "recipe[redisio]",
     "recipe[redisio::enable]",
+    "recipe[mongodb::10gen_repo]",
+    "recipe[mongodb]",
     "recipe[nodejs]",
     "nginx"
   ],

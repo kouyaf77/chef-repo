@@ -25,7 +25,8 @@
     "recipe[mongodb::10gen_repo]",
     "recipe[mongodb]",
     "recipe[nodejs]",
-    "nginx"
+    "recipe[locale]",
+    "recipe[nginx]"
   ],
   "automatic": {
     "ipaddress": "rails"

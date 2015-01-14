@@ -26,7 +26,7 @@
     "recipe[mongodb]",
     "recipe[nodejs]",
     "recipe[locale]",
-    "recipe[imagemagick]",
+    "recipe[imagemagick::devel]",
     "recipe[nginx]"
   ],
   "automatic": {
